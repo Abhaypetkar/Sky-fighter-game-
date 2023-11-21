@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("Image/bg.jpg");
+    
+}
+
+#gameContainer {
+    position: relative;
+    background: url("Image/Backgrond.png");
+    box-shadow: 0px 0px 10px 8px rgb(192, 93, 44);
+}
+
+canvas {
+    /* border: 2px solid rgb(243, 237, 237); */
+    display: block;
+    margin: 0 auto;
+}
+
+#healthBar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 20px;
+    border: 2px solid white;
+    background-color: black;
+}
+#healthBarFill{
+     height: 20px;
+     width: 12.5rem;
+    background-color: green;
+}
+#healthBar #reload{
+   display: none;
+   margin-left: 22rem;
+   border: none;
+   background: none;
+   margin-top: 20rem;
+   cursor: pointer;
+}
+#gameOver {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+
+#finalScore {
+    font-size: 24px;
+    margin-top: 20px;
+}
+

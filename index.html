@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter Game</title>
+    <link rel="stylesheet" href="skyf.css">
+    <style>
+        #playerImage,
+        .enemyImage {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gameContainer" class="bg">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div id="healthBar">
+            <div id="healthBarFill"></div>
+           <button id="reload"><img  src="Image/reload.png" alt="Reload Image"  onclick="window.location.reload()" /></button>
+            
+        </div>
+    </div>
+    <div class="rocket">
+    <img id="playerImage" src="Image/rocket.png" alt="Player Image" style="display: none;">
+    <img class="enemyImage" src="Image/rocket2.png" alt="Enemy Image" style="display: none;">
+    </div>
+    <script src="skyf.js"></script>
+</body>
+
+</html>
